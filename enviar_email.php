@@ -33,12 +33,12 @@ try {
   $mail->isSMTP();
   $mail->Host = 'smtp-mail.outlook.com';
   $mail->SMTPAuth = true;
-  $mail->Username = 'estevaoeferreira@hotmail.com';
-  $mail->Password = '@ju110177';
+  $mail->Username = 'fulano@gmail.com';
+  $mail->Password = 'senha123';
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; 
   $mail->Port = 465;
 
-  $mail->setFrom('estevaoeferreira@hotmail.com');
+  $mail->setFrom('fulano@gmail.com');
   $mail->addAddress($email_cliente);
 
   $mail->isHTML(true);
